@@ -20,9 +20,11 @@ View(fish_data_cat_2)
 
 library(ggplot2)
 
+#making a scatterplot comparing fish length and scale length and coloring them by lake ID
 ggplot(data = fish_data_cat_2, mapping = aes(x = length, y = scalelength, color = lakeid)) +
   geom_point()
 
+#This is Steven's code I pulled from GitHub:
 
 #what about this
 ggplot(fish_data_cat, aes(x = scalelength, fill = length)) +
