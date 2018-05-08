@@ -7,6 +7,7 @@ library(dplyr)
 
 View(fish_data_cat)
 
+#filtering out all scale lengths < 1
 fish_data_cat_2 <- filter(fish_data_cat, scalelength > 1)
 View(fish_data_cat_2)
 
