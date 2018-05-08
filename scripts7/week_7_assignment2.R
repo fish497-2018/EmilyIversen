@@ -15,3 +15,12 @@ View(fish_data_cat_2)
 
 #if you save something that you wish you didn't, you can revert it in the upper right pane
 
+
+#Exercise 5
+
+library(ggplot2)
+
+ggplot(data = fish_data_cat_2, mapping = aes(x = length, y = scalelength, color = lakeid)) +
+  geom_point()
+
+             
