@@ -30,4 +30,9 @@ ggplot(data = fish_data_cat_2, mapping = aes(x = length, y = scalelength, color 
 ggplot(fish_data_cat, aes(x = scalelength, fill = length)) +
   geom_histogram()
 
-             
+#Here are my edits of Steven's code (Exercise 6)
+scale_hist_by_length <- ggplot(fish_data_cat, aes(x = scalelength, fill = length)) +
+  geom_histogram(bins = 80)
+
+ggsave("scale_hist_by_length.jpeg")             
+
