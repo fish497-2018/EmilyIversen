@@ -31,3 +31,7 @@ ggplot(fish_data_cat, aes(x = scalelength, fill = length)) +
   geom_histogram()
 
              
+
+#Plot histogram of scale length by fish categorical size (ADDING ONE MORE TIME :)
+ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
+  geom_histogram()
